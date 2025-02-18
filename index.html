@@ -488,5 +488,34 @@ The following exercise will have several sliders. Use the sliders to indicate wh
     </div>
 
     <script src="script.js"></script>
+<script>
+document.querySelector("form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent page refresh
+
+    const formData = {
+        first_name: document.querySelector('input[name="first_name"]').value,
+        last_name: document.querySelector('input[name="last_name"]').value,
+        email: document.querySelector('input[name="email"]').value,
+        mobile: document.querySelector('input[name="mobile"]').value,
+        sms_consent: document.querySelector('input[name="sms_consent"]').checked ? "Yes" : "No",
+        about_me: document.querySelector('textarea[name="about_me"]').value,
+        college: document.querySelector('input[name="college"]').value,
+        major: document.querySelector('input[name="major"]').value,
+        industries: Array.from(document.querySelector('select[name="industries"]').selectedOptions).map(opt => opt.value).join(", "),
+        locations: document.querySelector('input[name="locations"]').value
+    };
+
+    fetch("https://script.google.com/macros/s/AKfycbzdwyGFOwcIhzoDVwgf9hzYj0gPuFsWw01whBUhml2Jl-YcWkUVFHBKxuvM3jbdjygF/exec", {
+        method: "POST",
+        body: JSON.stringify(formData),
+        headers: { "Content-Type": "application/json" }
+    })
+    .then(response => response.text())
+    .then(data => alert("Form submitted successfully!"))
+    .catch(error => console.error("Error:", error));
+});
+</script>
+
 </body>
 </html>
+
