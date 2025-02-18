@@ -54,5 +54,33 @@ body {
     width: 20px;
     height: 20px;
     background: white;
-    border: 2px solid
+    border: 2px solid gray;
+    border-radius: 50%;
+    cursor: pointer;
+}
 
+/* Left & Right Labels */
+.slider-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* Tooltip Styling */
+.left-label, .right-label {
+    position: relative;
+    cursor: pointer;
+}
+
+.left-label:hover::after, .right-label:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 20px;
+    background: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+}
