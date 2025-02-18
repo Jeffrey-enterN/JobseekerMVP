@@ -1,0 +1,96 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+/* Sticky Progress Bar */
+.progress-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #ddd;
+    height: 10px;
+    z-index: 1000;
+}
+
+.progress-bar {
+    height: 10px;
+    width: 0%;
+    background: linear-gradient(to right, teal, pink);
+    transition: width 0.4s ease-in-out;
+}
+
+#progressText {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/* Sliders */
+.slider-container {
+    margin: 20px 0;
+}
+
+.slider {
+    width: 100%;
+    -webkit-appearance: none;
+    height: 10px;
+    border-radius: 5px;
+    background: linear-gradient(to right, teal 50%, pink 50%);
+    outline: none;
+    transition: background 0.3s ease-in-out;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: 2px solid gray;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Tooltip Info Icons */
+.info-icon {
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 5px;
+    color: #555;
+    position: relative;
+}
+
+.info-icon:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+    background: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+/* Submit Button */
+#submitBtn {
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+    background: teal;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#submitBtn:hover {
+    background: darkcyan;
+}
