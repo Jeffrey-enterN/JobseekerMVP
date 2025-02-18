@@ -5,8 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jobseeker Self-Assessment</title>
     <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+ <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background: #f4f4f4;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            border-collapse: collapse;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background: teal;
+            color: white;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .checkbox-container input {
+            width: auto;
+            margin-right: 10px;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        button {
+            background: teal;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background: darkcyan;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            table {
+                width: 100%;
+                font-size: 14px;
+            }
+        }
+    </style>
 
     <!-- Sticky Progress Bar -->
     <div class="progress-container">
@@ -14,10 +87,103 @@
         <span id="progressText">0% Complete</span>
     </div>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobseeker Profile</title>
+   
+</head>
+<body>
+
+    <h2>Jobseeker Profile</h2>
+
+    <form>
+        <table>
+            <!-- Section 1: Basic Info -->
+            <tr>
+                <th colspan="2">Section 1: Basic Info</th>
+            </tr>
+            <tr>
+                <td>First Name:</td>
+                <td><input type="text" name="first_name" required></td>
+            </tr>
+            <tr>
+                <td>Last Name:</td>
+                <td><input type="text" name="last_name" required></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td>Mobile #:</td>
+                <td><input type="tel" name="mobile" required></td>
+            </tr>
+            <tr>
+                <td>Receive SMS Notifications:</td>
+                <td class="checkbox-container">
+                    <input type="checkbox" name="sms_consent"> I agree to receive SMS updates.
+                </td>
+            </tr>
+            <tr>
+                <td>About Me:</td>
+                <td><textarea name="about_me" rows="4" placeholder="Briefly describe yourself..."></textarea></td>
+            </tr>
+
+            <!-- Section 2: Education -->
+            <tr>
+                <th colspan="2">Section 2: Education</th>
+            </tr>
+            <tr>
+                <td>College Currently Attending:</td>
+                <td><input type="text" name="college"></td>
+            </tr>
+            <tr>
+                <td>Major:</td>
+                <td><input type="text" name="major"></td>
+            </tr>
+
+            <!-- Section 3: Career Interests -->
+            <tr>
+                <th colspan="2">Section 3: Career Interests</th>
+            </tr>
+            <tr>
+                <td>Industries of Interest:</td>
+                <td>
+                    <select name="industries" multiple>
+                        <option value="tech">Technology</option>
+                        <option value="finance">Finance</option>
+                        <option value="healthcare">Healthcare</option>
+                        <option value="marketing">Marketing</option>
+                        <option value="education">Education</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <small>Hold Ctrl (Cmd on Mac) to select multiple.</small>
+                </td>
+            </tr>
+            <tr>
+                <td>Locations of Interest:</td>
+                <td><input type="text" name="locations" placeholder="Enter cities or regions..."></td>
+            </tr>
+        </table>
+
+        <div class="button-container">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+
+</body>
+</html>
+
+
+
+
+    
     <div class="form-container">
         <h2>Jobseeker Self-Assessment</h2>
-The following exercise will have several sliders. Use the sliders to indicate where on the range you feel most comfortable or that you feel best reflects your work preferences. There are no right or wrong answers.
-            
+The following exercise will have several sliders. Use the sliders to indicate where on the range you feel most comfortable or that you feel best reflects your work preferences. There are no right or wrong answers.        
            
             <!-- Management & Leadership Preferences -->
             <h3>Preferred Management Style of Supervisor</h3>
