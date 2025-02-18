@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobseeker Self-Assessment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Sticky Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+        <span id="progressText">0% Complete</span>
+    </div>
+
+    <div class="form-container">
+        <h2>Self-Assessment</h2>
+
+        <!-- Sliders Section -->
+        <div id="sliders">
+            <!-- Work Style Sliders -->
+            <h3>Work Style Preferences</h3>
+            <div class="slider-container">
+                <label>Logical decision-making 
+                    <span class="info-icon" data-tooltip="Do you rely on data or gut instinct when making choices?">ℹ️</span>
+                </label>
+                <input type="range" min="0" max="100" value="50" class="slider">
+            </div>
+
+            <div class="slider-container">
+                <label>Prefers structure 
+                    <span class="info-icon" data-tooltip="Do you like clear guidelines or flexible work environments?">ℹ️</span>
+                </label>
+                <input type="range" min="0" max="100" value="50" class="slider">
+            </div>
+
+            <!-- Add all 50 sliders following the same pattern -->
+            
+        </div>
+
+        <button id="submitBtn">Submit</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
