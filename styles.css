@@ -19,7 +19,7 @@ body {
 .progress-bar {
     height: 10px;
     width: 0%;
-    background: linear-gradient(to right, teal, pink);
+    background: linear(to right, aqua 50%, deeppink 50%);
     transition: width 0.4s ease-in-out;
 }
 #progressText {
@@ -76,11 +76,11 @@ body {
     display: block;
     margin-top: 20px;
     padding: 10px;
-    background: teal;
+    background: deeppink;
     color: white;
     border: none;
     cursor: pointer;
 }
 #submitBtn:hover {
-    background: darkcyan;
+    background: purple;
 }
