@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jobseeker Self-Assessment</title>
+    <title>enterN Jobseeker Profile Creation</title>
     <link rel="stylesheet" href="styles.css">
  <style>
         body {
@@ -33,7 +33,7 @@
         }
 
         th {
-            background: teal;
+            background: aqua;
             color: white;
         }
 
@@ -60,7 +60,7 @@
         }
 
         button {
-            background: teal;
+            background: aqua;
             color: white;
             padding: 10px 20px;
             border: none;
@@ -92,429 +92,456 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jobseeker Profile</title>
+    <title>enterN Jobseeker Profile Creator</title>
    
 </head>
 <body>
 
-    <h2>Jobseeker Profile</h2>
+    <h2>Your enterN Profile | Let's Give Employers Something to See</h2>
 
     <form>
         <table>
             <!-- Section 1: Basic Info -->
             <tr>
-                <th colspan="2">Section 1: Basic Info</th>
+                <th colspan="2">Part I: Your Deets (This is for US to stay in touch)</th>
             </tr>
             <tr>
-                <td>First Name:</td>
+                <td>What's your first name?</td>
                 <td><input type="text" name="first_name" required></td>
             </tr>
             <tr>
-                <td>Last Name:</td>
+                <td>What's your last name?</td>
                 <td><input type="text" name="last_name" required></td>
             </tr>
             <tr>
-                <td>Email:</td>
+                <td>Where should we send a confirmation email?</td>
                 <td><input type="email" name="email" required></td>
             </tr>
+              <tr>
+                <td>If matched, is it okay to share this to employers?</td>
+                <td class="checkbox-container">
+                    <input type="checkbox" name="sms_consent"> I agree to share with MATCHED employers.
+                </td>
+            </tr>
             <tr>
-                <td>Mobile #:</td>
+                <td>Can we get your number?</td>
                 <td><input type="tel" name="mobile" required></td>
             </tr>
             <tr>
                 <td>Receive SMS Notifications:</td>
                 <td class="checkbox-container">
-                    <input type="checkbox" name="sms_consent"> I agree to receive SMS updates.
+                    <input type="checkbox" name="sms_consent"> Y'all can text me.
                 </td>
             </tr>
+                 <tr>
+                <td>If matched, is it okay to share this to employers?</td>
+                <td class="checkbox-container">
+                    <input type="checkbox" name="sms_consent"> I agree to share with MATCHED employers.
+                </td>
+            </tr>
+            
+            <!-- Section 2: Summary -->
             <tr>
-                <td>About Me:</td>
-                <td><textarea name="about_me" rows="4" placeholder="Briefly describe yourself..."></textarea></td>
+                <th colspan="2">Section II: Your Summary</th>
+            </tr>
+            <tr>
+                <td>Share a paragraph about YOU!</td>
+                <td><textarea name="about_me" rows="4" placeholder="Briefly describe yourself and avoid using any identifying information or gendered pronouns to maintain the anonymity of the enterN profiles..."></textarea></td>
             </tr>
 
-            <!-- Section 2: Education -->
+            <!-- Section 3: Education -->
             <tr>
-                <th colspan="2">Section 2: Education</th>
+                <th colspan="2">Section III: Your Studies</th>
             </tr>
             <tr>
-                <td>College Currently Attending:</td>
+                <td>Where are you studying?</td>
                 <td><input type="text" name="college"></td>
             </tr>
             <tr>
-                <td>Major:</td>
+                <td>What's your major?</td>
                 <td><input type="text" name="major"></td>
             </tr>
-
-            <!-- Section 3: Career Interests -->
             <tr>
-                <th colspan="2">Section 3: Career Interests</th>
-            </tr>
-            <tr>
-                <td>Industries of Interest:</td>
+                <td>What level of degree are you getting?</td>
                 <td>
                     <select name="industries" multiple>
-                        <option value="tech">Technology</option>
-                        <option value="finance">Finance</option>
-                        <option value="healthcare">Healthcare</option>
-                        <option value="government">Government</option>
-                        <option value="aerospace">Aerospace & Defense</option>
-                        <option value="automotive">Automotive</option>
-                        <option value="construction">Construction</option>
-                        <option value="energy">Energy</option>
-                        <option value="mnr">Mining & Natural Resources</option>
-                        <option value="marketing">Marketing</option>
-                        <option value="education">Education</option>
+                        <option value="2yr">Associate (2-Year)</option>
+                        <option value="4yr">Bachelor (4-Year)</option>
+                        <option value="mstr">Master/MBA</option>
+                        <option value="doctorate">Doctorate</option>
+                        <option value="jd">Juris Doctor</option>
+                        <option value="md">M.D.</option>
                         <option value="other">Other</option>
                     </select>
                     <small>Hold Ctrl (Cmd on Mac) to select multiple.</small>
                 </td>
             </tr>
+
+            <!-- Section 4: Career Interests -->
             <tr>
-                <td>Locations of Interest:</td>
-                <td><input type="text" name="locations" placeholder="Enter cities or regions..."></td>
+                <th colspan="2">Part IV: What do you want to do?</th>
+            </tr>
+            <tr>
+                <td>Industries of Interest</td>
+                <td>
+                    <select name="industries" multiple>
+                        <option value="11">Agriculture, Forestry, Fishing & Hunting</option>
+                        <option value="21">Mining, Quarrying, Oil & Gas</option>
+                        <option value="22">Utilities</option>
+                        <option value="23">Construction</option>
+                        <option value="31">Manufacturing</option>
+                        <option value="41">Wholesale Trade</option>
+                        <option value="44">Retail Trade</option>
+                        <option value="48">Transportation & Warehousing</option>
+                        <option value="51">Information</option>
+                        <option value="52">Finance & Insurance</option>
+                        <option value="53">Real Estate, Renting & Leasing</option>
+                        <option value="54">Professional, Scientific & Technical Services</option>
+                        <option value="55">Management of Companies & Enterprises</option>
+                        <option value="56a">Administrative Support</option>
+                        <option value="56b">Waste Management & Remediation</option>
+                        <option value="61">Educational Services</option>
+                        <option value="62">Health Care & Social Assistance</option>
+                        <option value="71">Arts, Entertainment & Recreation</option>
+                        <option value="72">Accommodation & Food Services</option>
+                        <option value="81">Public Administration</option>
+                        <option value="99">Other</option>
+                    </select>
+                    <small>Hold Ctrl (Cmd on Mac) to select multiple.</small>
+                </td>
+            </tr>
+            <tr>
+                <td>Primary Location Peferences</td>
+                <td><input type="text" name="locations" placeholder="Enter City, State or Regions"></td>
             </tr>
         </table>
     </form>
-
 </body>
 </html>
-
-
-
-
     
-    <div class="form-container">
-        <h2>Jobseeker Self-Assessment</h2>
-The following exercise will have several sliders. Use the sliders to indicate where on the range you feel most comfortable or that you feel best reflects your work preferences. There are no right or wrong answers.        
-           
-            <!-- Management & Leadership Preferences -->
-            <h3>Preferred Management Style of Supervisor</h3>
-            Select where you feel most comfortable when thinking about your future manager's leadership style.
+<div class="form-container">
+  <h2>Work, Organization & Leadership Preferences</h2>
+    <p>The following exercise will have several sliders.</p>
+    <p>Use the sliders to indicate where in the range you feel best reflects your choice of the two styles.</p>
+    <p>There are no right or wrong responses.</p>
 
-            <div class="slider-container">
-                <div class="slider-labels">
-                    <span class="left-label" data-tooltip="Enjoys a structured mentorship with clear guidance.">Enjoys Structured Mentorship</span>
-                    <span class="right-label" data-tooltip="Learns best by exploring independently.">Prefers Learning Independently</span>
-                </div>
-                <input type="range" min="0" max="100" value="50" class="slider">
-            </div>
+<!-- Mission & Vision Fit -->
+<h3>Mission & Vision</h3>
+<p>Move the slider to the position that best reflects your preferences.</p>    
 
-            <div class="slider-container">
-                <div class="slider-labels">
-                    <span class="left-label" data-tooltip=".">Frequent Check-ins</span>
-                    <span class="right-label" data-tooltip=".">As-Needed Support</span>
-                </div>
-                <input type="range" min="0" max="100" value="50" class="slider">
-            </div>
+<div class="slider-container">
+<div class="slider-labels">
+<span class="left-label" data-tooltip="The organization has a profit-focus.">Profit-Driven Success</span>
+<span class="right-label" data-tooltip="The organization has a mission-focus">Purpose-Driven Impact</span>
+</div>
+<input type="range" min="0" max="100" value="50" class="slider">
+</div>
 
-            <div class="slider-container">
-                <div class="slider-labels">
-                    <span class="left-label" data-tooltip=".">Strong Hierarchy</span>
-                    <span class="right-label" data-tooltip=".">Flat Leadership</span>
-                </div>
-                <input type="range" min="0" max="100" value="50" class="slider">
-            </div>
+<div class="slider-container">
+<div class="slider-labels">
+<span class="left-label" data-tooltip="">Innovation & Disruption</span>
+<span class="right-label" data-tooltip="">Tradition & Stability</span>
+</div>
+<input type="range" min="0" max="100" value="50" class="slider">
+</div>
 
-            <div class="slider-container">
-                <div class="slider-labels">
-                    <span class="left-label" data-tooltip=".">Formal Performance Reviews</span>
-                    <span class="right-label" data-tooltip=".">Continuous Feedback</span>
-                </div>
-                <input type="range" min="0" max="100" value="50" class="slider">
-            </div>
+<div class="slider-container">
+<div class="slider-labels">
+<span class="left-label" data-tooltip="">Diversity & Inclusion</span>
+<span class="right-label" data-tooltip="">Performance-First Culture</span>
+</div>
+<input type="range" min="0" max="100" value="50" class="slider">
+</div>
 
-            <div class="slider-container">
-                <div class="slider-labels">
-                    <span class="left-label" data-tooltip=".">Clearly Defined Roles</span>
-                    <span class="right-label" data-tooltip=".">Fluid Responsibilities</span>
-                </div>
-                <input type="range" min="0" max="100" value="50" class="slider">
-            </div>
+<div class="slider-container">
+<div class="slider-labels">
+<span class="left-label" data-tooltip="">Merit-Based Growth</span>
+<span class="right-label" data-tooltip="">Tenure-Based Growht</span>
+</div>
+<input type="range" min="0" max="100" value="50" class="slider">
+</div>
 
-            <div class="slider-container">
-                <div class="slider-labels">
-                    <span class="left-label" data-tooltip=".">Flexible and Ambiguous</span>
-                    <span class="right-label" data-tooltip=".">Taskmaster with Clear Expectations</span>
-                </div>
-                <input type="range" min="0" max="100" value="50" class="slider">
-            </div>
-            
-            <div class="slider-container">
-                <div class="slider-labels">
-                    <span class="left-label" data-tooltip="Prefers strong leadership and decision-making from managers.">Wants Leaders to Take Charge</span>
-                    <span class="right-label" data-tooltip="Values shared decision-making and flat leadership.">Prefers Shared Decision-Making</span>
-                </div>
-                <input type="range" min="0" max="100" value="50" class="slider">
-            </div>
+<div class="slider-container">
+<div class="slider-labels">
+<span class="left-label" data-tooltip="">Highly Competitive</span>
+<span class="right-label" data-tooltip="">Cooperative & Supportive</span>
+</div>
+<input type="range" min="0" max="100" value="50" class="slider">
+</div>
 
-            <!-- Company Culture & Work Environment -->
-            <h3>Company Culture Preferences</h3>
-            Select the choices that best reflect the culture, values, or mission of the organization you want to work for.
+<div class="slider-container">
+<div class="slider-labels">
+<span class="left-label" data-tooltip="">Work Hard, Play Hard</span>
+<span class="right-label" data-tooltip="">Steady & Balanced</span>
+</div>
+<input type="range" min="0" max="100" value="50" class="slider">
+</div>
 
-            <div class="slider-container">
-                <div class="slider-labels">
-                    <span class="left-label" data-tooltip="Prefers a fast-growing startup environment with rapid change.">Fast-Growing Startup</span>
-                    <span class="right-label" data-tooltip="Prefers a well-established company with stability.">Established Corporation</span>
-                </div>
-                <input type="range" min="0" max="100" value="50" class="slider">
-            </div>
+<!-- Work Style -->
+<h3>Work Style Preferences</h3>
+<p>Move the slider to the position that best reflects your preferences.</p>    
 
-            <div class="slider-container">
-                <div class="slider-labels">
-                    <span class="left-label" data-tooltip=".">Casual Dress Code</span>
-                    <span class="right-label" data-tooltip=".">Professional Attire</span>
-                </div>
-                <input type="range" min="0" max="100" value="50" class="slider">
-            </div>
+<div class="slider-container">
+<div class="slider-labels">
+<span class="left-label" data-tooltip="">Logical Decision-Making</span>
+<span class="right-label" data-tooltip="">Intuitive Decision-Making</span>
+</div>
+<input type="range" min="0" max="100" value="50" class="slider">
+</div>
 
-            <div class="slider-container">
-                <div class="slider-labels">
-                    <span class="left-label" data-tooltip=".">Values Efficiency</span>
-                    <span class="right-label" data-tooltip=".">Prioritizes Creativity</span>
-                </div>
-                <input type="range" min="0" max="100" value="50" class="slider">
-            </div>
+<div class="slider-container">
+<div class="slider-labels">
+<span class="left-label" data-tooltip="">Prefers Structure</span>
+<span class="right-label" data-tooltip="">Thrives in Ambiguity</span>
+</div>
+<input type="range" min="0" max="100" value="50" class="slider">
+</div>
 
-            <div class="slider-container">
-                <div class="slider-labels">
-                    <span class="left-label" data-tooltip=".">Strict Policies</span>
-                    <span class="right-label" data-tooltip=".">Trust-Based Flexibility</span>
-                </div>
-                <input type="range" min="0" max="100" value="50" class="slider">
-            </div>
+<div class="slider-container">
+<div class="slider-labels">
+<span class="left-label" data-tooltip="">Works Best Under Pressure</span>
+<span class="right-label" data-tooltip="">Prefers Steady Workflow</span>
+</div>
+<input type="range" min="0" max="100" value="50" class="slider">
+</div>
 
-            <div class="slider-container">
-                <div class="slider-labels">
-                    <span class="left-label" data-tooltip=".">Prioritizes Employees' Needs</span>
-                    <span class="right-label" data-tooltip=".">Prioritizes Customers' Needs</span>
-                </div>
-                <input type="range" min="0" max="100" value="50" class="slider">
-            </div>
+<div class="slider-container">
+<div class="slider-labels">
+<span class="left-label" data-tooltip="">Prefers Deadlines</span>
+<span class="right-label" data-tooltip="">Prefers to Work Without Them</span>
+</div>
+<input type="range" min="0" max="100" value="50" class="slider">
+</div>
 
-            <div class="slider-container">
-                <div class="slider-labels">
-                    <span class="left-label" data-tooltip=".">Employee-Driven Initiatives</span>
-                    <span class="right-label" data-tooltip=".">Leadership-Driven Direction</span>
-                </div>
-                <input type="range" min="0" max="100" value="50" class="slider">
-            </div>
+<div class="slider-container">
+<div class="slider-labels">
+<span class="left-label" data-tooltip="">Collaborative Teams</span>
+<span class="right-label" data-tooltip="">Independent Focus</span>
+</div>
+<input type="range" min="0" max="100" value="50" class="slider">
+</div>
 
-            <div class="slider-container">
-                <div class="slider-labels">
-                    <span class="left-label" data-tooltip="Prefers a highly competitive and goal-driven workplace.">Competitive Workplace</span>
-                    <span class="right-label" data-tooltip="Prefers a more nurturing and collaborative environment.">Nurturing Environment</span>
-                </div>
-                <input type="range" min="0" max="100" value="50" class="slider">
-            </div>
-            
-            <div class="slider-container">
-                <div class="slider-labels">
-                    <span class="left-label" data-tooltip=".">Face-to-Face Discussions</span>
-                    <span class="right-label" data-tooltip=".">Digital Communications</span>
-                </div>
-                <input type="range" min="0" max="100" value="50" class="slider">
-            </div>
+<div class="slider-container">
+<div class="slider-labels">
+<span class="left-label" data-tooltip="">Experimentation</span>
+<span class="right-label" data-tooltip="">Proven Practices</span>
+</div>
+<input type="range" min="0" max="100" value="50" class="slider">
+</div>
 
-                        <div class="slider-container">
-                <div class="slider-labels">
-                    <span class="left-label" data-tooltip=".">Informal Brainstorming</span>
-                    <span class="right-label" data-tooltip=".">Structured Problem-Solving</span>
-                </div>
-                <input type="range" min="0" max="100" value="50" class="slider">
-            </div>
+<!-- Management & Leadership Style -->
+<h3>Preferred Style for Supervisor</h3>
+<p>Move the slider to the position that best reflects your preferences.</p>    
 
-                        <div class="slider-container">
-                <div class="slider-labels">
-                    <span class="left-label" data-tooltip=".">Encourages Transparency</span>
-                    <span class="right-label" data-tooltip=".">Values Discretion</span>
-                </div>
-                <input type="range" min="0" max="100" value="50" class="slider">
-            </div>
+<div class="slider-container">
+<div class="slider-labels">
+<span class="left-label" data-tooltip="">Structured Mentorship</span>
+<span class="right-label" data-tooltip="">Independent Learning</span>
+</div>
+<input type="range" min="0" max="100" value="50" class="slider">
+</div>
 
-                        <div class="slider-container">
-                <div class="slider-labels">
-                    <span class="left-label" data-tooltip=".">Values Data-Backed Arguments</span>
-                    <span class="right-label" data-tooltip=".">Values Persuasive Storytelling</span>
-                </div>
-                <input type="range" min="0" max="100" value="50" class="slider">
-            </div>
+<div class="slider-container">
+<div class="slider-labels">
+<span class="left-label" data-tooltip="">Strong Hierarchy</span>
+<span class="right-label" data-tooltip="">Flat Leadership</span>
+</div>
+<input type="range" min="0" max="100" value="50" class="slider">
+</div>
 
-                        <div class="slider-container">
-                <div class="slider-labels">
-                    <span class="left-label" data-tooltip=".">Defined Work Hours</span>
-                    <span class="right-label" data-tooltip=".">Flexible Scheduling</span>
-                </div>
-                <input type="range" min="0" max="100" value="50" class="slider">
-            </div>
+<div class="slider-container">
+<div class="slider-labels">
+<span class="left-label" data-tooltip="">Taskmaster & Transparent</span>
+<span class="right-label" data-tooltip="">Hands-off & Ambiguous</span>
+</div>
+<input type="range" min="0" max="100" value="50" class="slider">
+</div>
 
-                        <div class="slider-container">
-                <div class="slider-labels">
-                    <span class="left-label" data-tooltip=".">Mission-Driven Organization</span>
-                    <span class="right-label" data-tooltip=".">Profit-Focused Company</span>
-                </div>
-                <input type="range" min="0" max="100" value="50" class="slider">
-            </div>
+<div class="slider-container">
+<div class="slider-labels">
+<span class="left-label" data-tooltip="">Public Recognition</span>
+<span class="right-label" data-tooltip="">Private Appreciation</span>
+</div>
+<input type="range" min="0" max="100" value="50" class="slider">
+</div>
 
-                        <div class="slider-container">
-                <div class="slider-labels">
-                    <span class="left-label" data-tooltip=".">Expects Setting Boundaries</span>
-                    <span class="right-label" data-tooltip=".">Expects Continuous Availability</span>
-                </div>
-                <input type="range" min="0" max="100" value="50" class="slider">
-            </div>
+<div class="slider-container">
+<div class="slider-labels">
+<span class="left-label" data-tooltip="">Encourages Competition</span>
+<span class="right-label" data-tooltip="">Fosters Collaboration</span>
+</div>
+<input type="range" min="0" max="100" value="50" class="slider">
+</div>
 
-        <div class="slider-container">
-                <div class="slider-labels">
-                    <span class="left-label" data-tooltip="Logical: Based on facts, data, and structured reasoning.">Logical Decision-Making</span>
-                    <span class="right-label" data-tooltip="Intuitive: Based on feelings, instincts, and experience.">Intuitive Decision-Making</span>
-                </div>
-                <input type="range" min="0" max="100" value="50" class="slider">
-            </div>
+<div class="slider-container">
+<div class="slider-labels">
+<span class="left-label" data-tooltip="">Sets Boundaries</span>
+<span class="right-label" data-tooltip="">Always Available</span>
+</div>
+<input type="range" min="0" max="100" value="50" class="slider">
+</div>
 
-            <div class="slider-container">
-                <div class="slider-labels">
-                    <span class="left-label" data-tooltip="Prefers clear rules, guidelines, and structured plans.">Prefers Structure</span>
-                    <span class="right-label" data-tooltip="Enjoys flexible work environments and adapting to change.">Thrives in Ambiguity</span>
-                </div>
-                <input type="range" min="0" max="100" value="50" class="slider">
-            </div>
+<!-- Work Environment -->
+<h3>Preferred Work Environment</h3>
+<p>Move the slider to the position that best reflects your preferences.</p>    
 
-            <div class="slider-container">
-                <div class="slider-labels">
-                    <span class="left-label" data-tooltip="Thrives under tight deadlines and high-pressure situations.">Works Best Under Pressure</span>
-                    <span class="right-label" data-tooltip="Prefers steady, predictable workflows with minimal stress.">Prefers Steady Workflow</span>
-                </div>
-                <input type="range" min="0" max="100" value="50" class="slider">
-            </div>
+<div class="slider-container">
+<div class="slider-labels">
+<span class="left-label" data-tooltip="">Deep Focus</span>
+<span class="right-label" data-tooltip="">Distractions & Multitasking</span>
+</div>
+<input type="range" min="0" max="100" value="50" class="slider">
+</div>
 
-            <div class="slider-container">
-                <div class="slider-labels">
-                    <span class="left-label" data-tooltip=".">Deadlines to Stay on Track</span>
-                    <span class="right-label" data-tooltip=".">Work Without Deadlines</span>
-                </div>
-                <input type="range" min="0" max="100" value="50" class="slider">
-            </div>
+<div class="slider-container">
+<div class="slider-labels">
+<span class="left-label" data-tooltip="">Working Solo</span>
+<span class="right-label" data-tooltip="">Frequent Collaboration</span>
+</div>
+<input type="range" min="0" max="100" value="50" class="slider">
+</div>
 
-            <div class="slider-container">
-                <div class="slider-labels">
-                    <span class="left-label" data-tooltip=".">Experiment with New Methods</span>
-                    <span class="right-label" data-tooltip=".">Stick to Proven Practices</span>
-                </div>
-                <input type="range" min="0" max="100" value="50" class="slider">
-            </div>
+<div class="slider-container">
+<div class="slider-labels">
+<span class="left-label" data-tooltip="">Quick Sprints</span>
+<span class="right-label" data-tooltip="">Long-Term Projects</span>
+</div>
+<input type="range" min="0" max="100" value="50" class="slider">
+</div>
 
-            <div class="slider-container">
-                <div class="slider-labels">
-                    <span class="left-label" data-tooltip=".">Consistent Routine</span>
-                    <span class="right-label" data-tooltip=".">Frequent Changes</span>
-                </div>
-                <input type="range" min="0" max="100" value="50" class="slider">
-            </div>
+<div class="slider-container">
+<div class="slider-labels">
+<span class="left-label" data-tooltip="">High-Energy, Fast-Paced</span>
+<span class="right-label" data-tooltip="">Calm & Steady</span>
+</div>
+<input type="range" min="0" max="100" value="50" class="slider">
+</div>
 
-            <div class="slider-container">
-                <div class="slider-labels">
-                    <span class="left-label" data-tooltip=".">Routine, Formal Meetings</span>
-                    <span class="right-label" data-tooltip=".">Irregular, Spontaneous Collaboration</span>
-                </div>
-                <input type="range" min="0" max="100" value="50" class="slider">
-            </div>
+<div class="slider-container">
+<div class="slider-labels">
+<span class="left-label" data-tooltip="">Bright and Noisy</span>
+<span class="right-label" data-tooltip="">Dark and Quiet</span>
+</div>
+<input type="range" min="0" max="100" value="50" class="slider">
+</div>
 
+<div class="slider-container">
+<div class="slider-labels">
+<span class="left-label" data-tooltip="">Highly Structured</span>
+<span class="right-label" data-tooltip="">Creative Freedom</span>
+</div>
+<input type="range" min="0" max="100" value="50" class="slider">
+</div>
 
-        
-        <!-- Career Growth & Personal Development Goals -->
-            <h3>Career Growth & Personal Development Goals</h3>
-            Select your preferences for these choices related to your personal, professional, and career growth.
-            
-            <div class="slider-container">
-                <div class="slider-labels">
-                    <span class="left-label" data-tooltip=".">Steady Career Progression</span>
-                    <span class="right-label" data-tooltip=".">Rapid Advancement</span>
-                </div>
-                <input type="range" min="0" max="100" value="50" class="slider">
-            </div>
+<!-- Communication & Collaboration -->
+<h3>Preferred Collaboration Styles</h3>
+<p>Move the slider to the position that best reflects your preferences.</p>    
 
-                        <div class="slider-container">
-                <div class="slider-labels">
-                    <span class="left-label" data-tooltip=".">Promotions Based on Tenure</span>
-                    <span class="right-label" data-tooltip=".">Promotions Based on Merit</span>
-                </div>
-                <input type="range" min="0" max="100" value="50" class="slider">
-            </div>
+<div class="slider-container">
+<div class="slider-labels">
+<span class="left-label" data-tooltip="">Defined Roles</span>
+<span class="right-label" data-tooltip="">Fluid Responsibilities</span>
+</div>
+<input type="range" min="0" max="100" value="50" class="slider">
+</div>
 
-                        <div class="slider-container">
-                <div class="slider-labels">
-                    <span class="left-label" data-tooltip=".">Seeking Opportunity For Leadership</span>
-                    <span class="right-label" data-tooltip=".">Prefers to Stay Specialized</span>
-                </div>
-                <input type="range" min="0" max="100" value="50" class="slider">
-            </div>
+<div class="slider-container">
+<div class="slider-labels">
+<span class="left-label" data-tooltip="">Data-Backed Arguments</span>
+<span class="right-label" data-tooltip="">Persuasive Storytelling</span>
+</div>
+<input type="range" min="0" max="100" value="50" class="slider">
+</div>
 
-                        <div class="slider-container">
-                <div class="slider-labels">
-                    <span class="left-label" data-tooltip=".">Seeking Formal Training</span>
-                    <span class="right-label" data-tooltip=".">Seeking Self-Directed Learning</span>
-                </div>
-                <input type="range" min="0" max="100" value="50" class="slider">
-            </div>
+<div class="slider-container">
+<div class="slider-labels">
+<span class="left-label" data-tooltip="">Quick & Informal Meetings</span>
+<span class="right-label" data-tooltip="">Formal, Scheduled Meetings</span>
+</div>
+<input type="range" min="0" max="100" value="50" class="slider">
+</div>
 
-                        <div class="slider-container">
-                <div class="slider-labels">
-                    <span class="left-label" data-tooltip=".">Wants Structured Career Planning</span>
-                    <span class="right-label" data-tooltip=".">Wants Organic Professional Growth</span>
-                </div>
-                <input type="range" min="0" max="100" value="50" class="slider">
-            </div>
+<div class="slider-container">
+<div class="slider-labels">
+<span class="left-label" data-tooltip="">Face-to-Face Discussions</span>
+<span class="right-label" data-tooltip="">Digital Communications</span>
+</div>
+<input type="range" min="0" max="100" value="50" class="slider">
+</div>
 
-                        <div class="slider-container">
-                <div class="slider-labels">
-                    <span class="left-label" data-tooltip=".">Seeking Formalized Mentor Programs</span>
-                    <span class="right-label" data-tooltip=".">Not Seeking a Mentor</span>
-                </div>
-                <input type="range" min="0" max="100" value="50" class="slider">
-            </div>
+<div class="slider-container">
+<div class="slider-labels">
+<span class="left-label" data-tooltip="">Open Idea-Sharing</span>
+<span class="right-label" data-tooltip="">Structured Approvals</span>
+</div>
+<input type="range" min="0" max="100" value="50" class="slider">
+</div>
 
-                        <div class="slider-container">
-                <div class="slider-labels">
-                    <span class="left-label" data-tooltip=".">Clear Career Ladder</span>
-                    <span class="right-label" data-tooltip=".">Flexible Career Lattices</span>
-                </div>
-                <input type="range" min="0" max="100" value="50" class="slider">
-            </div>
-            
+<div class="slider-container">
+<div class="slider-labels">
+<span class="left-label" data-tooltip="">Group Consensus</span>
+<span class="right-label" data-tooltip="">Decisive Leadership</span>
+</div>
+<input type="range" min="0" max="100" value="50" class="slider">
+</div>
+    
+<!-- Career Growth & Development -->
+<h3>Growth & Development Goals</h3>
+<p>Move the slider to the position that best reflects your preferences.</p>    
 
-        </div>
+<div class="slider-container">
+<div class="slider-labels">
+<span class="left-label" data-tooltip="">Steady Progression</span>
+<span class="right-label" data-tooltip="">Rapid Promotion</span>
+</div>
+<input type="range" min="0" max="100" value="50" class="slider">
+</div>
 
-        <button id="submitBtn">Submit</button>
-    </div>
+<div class="slider-container">
+<div class="slider-labels">
+<span class="left-label" data-tooltip="">Tenure-Based Promotion</span>
+<span class="right-label" data-tooltip="">Merit-Based Promotion</span>
+</div>
+<input type="range" min="0" max="100" value="50" class="slider">
+</div>
 
-    <script src="script.js"></script>
-<script>
-document.querySelector("form").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent page refresh
+<div class="slider-container">
+<div class="slider-labels">
+<span class="left-label" data-tooltip="">Seeking Leadership Opportunities</span>
+<span class="right-label" data-tooltip="">Prefers to Specialize</span>
+</div>
+<input type="range" min="0" max="100" value="50" class="slider">
+</div>
 
-    const formData = {
-        first_name: document.querySelector('input[name="first_name"]').value,
-        last_name: document.querySelector('input[name="last_name"]').value,
-        email: document.querySelector('input[name="email"]').value,
-        mobile: document.querySelector('input[name="mobile"]').value,
-        sms_consent: document.querySelector('input[name="sms_consent"]').checked ? "Yes" : "No",
-        about_me: document.querySelector('textarea[name="about_me"]').value,
-        college: document.querySelector('input[name="college"]').value,
-        major: document.querySelector('input[name="major"]').value,
-        industries: Array.from(document.querySelector('select[name="industries"]').selectedOptions).map(opt => opt.value).join(", "),
-        locations: document.querySelector('input[name="locations"]').value
-    };
+<div class="slider-container">
+<div class="slider-labels">
+<span class="left-label" data-tooltip="">Seeks Cross-Training</span>
+<span class="right-label" data-tooltip="">Seeks Single-Focus</span>
+</div>
+<input type="range" min="0" max="100" value="50" class="slider">
+</div>
 
-    fetch("https://script.google.com/macros/s/AKfycbzdwyGFOwcIhzoDVwgf9hzYj0gPuFsWw01whBUhml2Jl-YcWkUVFHBKxuvM3jbdjygF/exec", {
-        method: "POST",
-        body: JSON.stringify(formData),
-        headers: { "Content-Type": "application/json" }
-    })
-    .then(response => response.text())
-    .then(data => alert("Form submitted successfully!"))
-    .catch(error => console.error("Error:", error));
-});
-</script>
+<div class="slider-container">
+<div class="slider-labels">
+<span class="left-label" data-tooltip="">Values Mentorship</span>
+<span class="right-label" data-tooltip="">Independent Skill-Building</span>
+</div>
+<input type="range" min="0" max="100" value="50" class="slider">
+</div>
+
+<div class="slider-container">
+<div class="slider-labels">
+<span class="left-label" data-tooltip="">Motivated by Promotions</span>
+<span class="right-label" data-tooltip="">Motivated by Achievements</span>
+</div>
+<input type="range" min="0" max="100" value="50" class="slider">
+</div>
+    
+</div>
+  <button id="submitBtn">Submit</button>
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
