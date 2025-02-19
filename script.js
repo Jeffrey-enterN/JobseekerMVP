@@ -13,16 +13,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function updateSliderColor(slider) {
         let value = slider.value;
+        slider.style.background = `linear-gradient(to right, cyan ${0 - value}%, deeppink ${100 - value}%)`;
         slider.style.background = `linear-gradient(to right, cyan ${value}%, deeppink 0)`;
-        slider.style.background = `linear(to right, cyan ${0 - value}%, deeppink ${100 - value}%)`;
     }
 
     function updateProgress() {
         let completed = [...sliders].filter(slider => slider.value !== "50").length;
-        let progressPercent = (scrollTop / docHeight) * 100;
-
+        let progressPercent = (completed / sliders.length) * 100;
         progressBar.style.width = progressPercent + "%";
-        progressText.innerText = Math.round(progressPercent) + "% Scrolled";
+        progressText.innerText = Math.round(progressPercent) + "% Complete";
     }
 
     function triggerHapticFeedback() {
