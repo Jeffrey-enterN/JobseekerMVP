@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function updateSliderColor(slider) {
         let value = slider.value;
-        slider.style.background = `linear-gradient(to right, teal ${value}%, pink ${100 - value}%)`;
+        slider.style.background = `linear-gradient(to right, cyan ${0 - value}%, deeppink ${100 - value}%)`;
     }
 
     function updateProgress() {
