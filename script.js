@@ -6,30 +6,21 @@ document.addEventListener("DOMContentLoaded", function () {
     sliders.forEach(slider => {
         slider.addEventListener("input", function () {
             updateSliderColor(this);
+            updateProgress();
             triggerHapticFeedback();
         });
-
-        // Initialize color on page load
-        updateSliderColor(slider);
     });
 
     function updateSliderColor(slider) {
         let value = slider.value;
-        let min = slider.min || 0;
-        let max = slider.max || 100;
-        let percent = ((value - min) / (max - min)) * 100;
-
-        // Update background gradient based on current position
-        slider.style.background = `linear-gradient(to right, cyan ${percent}%, deeppink ${percent}%)`;
+        slider.style.background = `linear-gradient(to right, aqua ${value}%, to left, deeppink ${100 - value}%)`;
     }
 
     function updateProgress() {
-        let scrollTop = window.scrollY;
-        let docHeight = document.documentElement.scrollHeight - window.innerHeight;
-        let progressPercent = (scrollTop / docHeight) * 100;
-
+        let completed = [...sliders].filter(slider => slider.value !== "50").length;
+        let progressPercent = (completed / sliders.length) * 100;
         progressBar.style.width = progressPercent + "%";
-        progressText.innerText = Math.round(progressPercent) + "% Scrolled";
+        progressText.innerText = Math.round(progressPercent) + "% Complete";
     }
 
     function triggerHapticFeedback() {
@@ -37,10 +28,4 @@ document.addEventListener("DOMContentLoaded", function () {
             navigator.vibrate(10); // Small vibration on mobile
         }
     }
-
-    // Listen for scroll events
-    window.addEventListener("scroll", updateProgress);
-
-    // Initialize progress on page load
-    updateProgress();
 });
