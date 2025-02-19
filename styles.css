@@ -19,7 +19,7 @@ body {
 .progress-bar {
     height: 10px;
     width: 0%;
-    background: linear(to right, aqua 50%, deeppink 50%);
+    background: linear-gradient(to right, aqua, deeppink);
     transition: width 0.4s ease-in-out;
 }
 #progressText {
@@ -37,7 +37,7 @@ body {
     -webkit-appearance: none;
     height: 10px;
     border-radius: 5px;
-    background: linear(to right, aqua 50%, deeppink 50%);
+    background: linear-gradient(to right, aqua 50%, deeppink 50%);
     outline: none;
     transition: background 0.3s ease-in-out;
 }
