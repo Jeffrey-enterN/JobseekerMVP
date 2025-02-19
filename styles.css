@@ -37,7 +37,7 @@ body {
     -webkit-appearance: none;
     height: 10px;
     border-radius: 5px;
-    background: linear-gradient(to right, teal 50%, pink 50%);
+    background: linear(to right, aqua 50%, deeppink 50%);
     outline: none;
     transition: background 0.3s ease-in-out;
 }
