@@ -13,12 +13,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function updateSliderColor(slider) {
         let value = slider.value;
+        slider.style.background = `linear-gradient(to right, cyan ${value}%, deeppink 0)`;
         slider.style.background = `linear(to right, cyan ${0 - value}%, deeppink ${100 - value}%)`;
     }
 
     function updateProgress() {
-        let scrollTop = window.scrollY;
-        let docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        let completed = [...sliders].filter(slider => slider.value !== "50").length;
         let progressPercent = (scrollTop / docHeight) * 100;
 
         progressBar.style.width = progressPercent + "%";
@@ -30,9 +30,4 @@ document.addEventListener("DOMContentLoaded", function () {
             navigator.vibrate(10); // Small vibration on mobile
         }
     }
-        // Listen for scroll events
-    window.addEventListener("scroll", updateProgress);
-
-    // Initialize progress on page load
-    updateProgress();
 });
