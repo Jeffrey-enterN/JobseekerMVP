@@ -17,10 +17,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function updateProgress() {
-        let completed = [...sliders].filter(slider => slider.value !== "50").length;
-        let progressPercent = (completed / sliders.length) * 100;
+        let scrollTop = window.scrollY;
+        let docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        let progressPercent = (scrollTop / docHeight) * 100;
+
         progressBar.style.width = progressPercent + "%";
-        progressText.innerText = Math.round(progressPercent) + "% Complete";
+        progressText.innerText = Math.round(progressPercent) + "% Scrolled";
     }
 
     function triggerHapticFeedback() {
@@ -28,4 +30,9 @@ document.addEventListener("DOMContentLoaded", function () {
             navigator.vibrate(10); // Small vibration on mobile
         }
     }
+        // Listen for scroll events
+    window.addEventListener("scroll", updateProgress);
+
+    // Initialize progress on page load
+    updateProgress();
 });
