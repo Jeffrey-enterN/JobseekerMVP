@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     function updateSliderColor(slider) {
         let value = slider.value;
-        slider.style.background = `linear(to right, aqua ${value}%, deeppink ${100 - value}%)`;
+        slider.style.background = `linear-gradient(to right, aqua ${value}%, deeppink ${0 - value}%)`;
     }
     function updateProgress() {
         let completed = [...sliders].filter(slider => slider.value !== "50").length;
