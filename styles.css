@@ -30,9 +30,21 @@ body {
 }
 /* Sliders */
 .slider-container {
-    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+    margin: 10px 0;
 }
+
+.left-label, .right-label {
+    width: 30%;
+    text-align: center;
+    font-size: 14px;
+}
+
 .slider {
+    flex-grow: 1;
+    margin: 0 10px;
     width: 100%;
     -webkit-appearance: none;
     height: 10px;
@@ -41,6 +53,7 @@ body {
     outline: none;
     transition: background 0.3s ease-in-out;
 }
+
 .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
@@ -51,6 +64,8 @@ body {
     border-radius: 50%;
     cursor: pointer;
 }
+
+
 /* Tooltip Info Icons */
 .info-icon {
     font-size: 14px;
