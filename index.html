@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>enterN Jobseeker Profile Creation</title>
+    <title>enterN Jobseeker Demo</title>
     <link rel="stylesheet" href="styles.css">
  <style>
         body {
@@ -103,7 +103,7 @@
         <table>
             <!-- Section 1: Basic Info -->
             <tr>
-                <th colspan="2">Part 1: Your Deets (This is for US to stay in touch)</th>
+                <th colspan="2">Personal & Contact Info</th>
             </tr>
             <tr>
                 <td>First Name:</td>
@@ -114,13 +114,13 @@
                 <td><input type="text" name="last_name" required></td>
             </tr>
             <tr>
-                <td>Email(This may differ from your log-in email):</td>
+                <td>School Email (if different from your login email):</td>
                 <td><input type="email" name="email" required></td>
             </tr>
               <tr>
                 <td>If matched, may we share your email with employers?</td>
                 <td class="checkbox-container">
-                    <input type="checkbox" name="sms_consent"> I agree to share with MATCHED employers.
+                    <input type="checkbox" name="email_consent"> Yes
                 </td>
             </tr>
             <tr>
@@ -130,19 +130,19 @@
             <tr>
                 <td>May we send SMS Notifications:</td>
                 <td class="checkbox-container">
-                    <input type="checkbox" name="sms_consent"> Yes, you can text me.
+                    <input type="checkbox" name="sms_consent"> Yes
                 </td>
             </tr>
                  <tr>
                 <td>If matched, may we share your number with employers?</td>
                 <td class="checkbox-container">
-                    <input type="checkbox" name="sms_consent"> I agree to share with MATCHED employers.
+                    <input type="checkbox" name="sms_consent"> Yes
                 </td>
             </tr>
             
             <!-- Section 2: Summary -->
             <tr>
-                <th colspan="2">Part 2: Your Summary</th>
+                <th colspan="2">Your Summary</th>
             </tr>
             <tr>
                 <td>Share a paragraph about YOU!</td>
@@ -151,7 +151,7 @@
 
             <!-- Section 3: Education -->
             <tr>
-                <th colspan="2">Part 3: Your Studies</th>
+                <th colspan="2">School & Major</th>
             </tr>
             <tr>
                 <td>What college do you attend?</td>
@@ -179,7 +179,7 @@
 
             <!-- Section 4: Career Interests -->
             <tr>
-                <th colspan="2">Part 4: What do you want to do?</th>
+                <th colspan="2">Industry & Location Preferences</th>
             </tr>
             <tr>
                 <td>Industries of Interest</td>
@@ -229,7 +229,7 @@
 
     <!-- Mission & Vision Fit -->
 <h3>Mission & Vision</h3>
-<p>Move the slider to the position that best reflects your preferences.</p>    
+<p>Move the slider to the position that best reflects your preferences on the mission, vision, and values of the organization you wish to work for.</p>    
 <div class="slider-container">
     <label>
         <span class="left-label" data-tooltip="An organization with a mission-driven approach to business.">←Purpose-Driven Impact</span>
