@@ -247,140 +247,136 @@
 <h2>Work, Organization & Leadership Preferences</h2>
 <p>The following exercise will have several sliders.</p>
 <p>Use the sliders to indicate where in the range you feel best reflects your choice of the two styles.</p>
-<p>There are no right or wrong responses.</p>
-
-            
-            
-    <div class="toggle-list">
-        <div class="toggle-header" onclick="toggleList(header)">
-            <h3>Mission & Vision</h3>
-            <span class="toggle-icon">&#9658;</span>
+<p>There are no right or wrong responses.</p>               
+<h3>Mission & Vision</h3>
+<p>Move the slider to the position that best reflects your preferences on the mission, vision, and values of the organization you wish to work for.</p>
+        <div class="slider-container">
+            <label>
+                <span class="left-label" data-tooltip="An organization with a mission-driven approach to business.">←Purpose-Driven Impact</span>
+                <input type="range" min="0" max="100" value="50" class="slider" name="mission_purpose_profit">
+                <span class="right-label" data-tooltip="An organization that focuses on profit and creating shareholder value.">Profit-Driven Focus→</span>
+            </label>
         </div>
-        <div class="toggle-content">
-            <p>Move the slider to the position that best reflects your preferences on the mission, vision, and values of the organization you wish to work for.</p>
-            <div class="slider-container">
-                <label>
-                    <span class="left-label" data-tooltip="An organization with a mission-driven approach to business.">←Purpose-Driven Impact</span>
-                     <input type="range" min="0" max="100" value="50" class="slider" name="mission_purpose_profit">
-                    <span class="right-label" data-tooltip="An organization that focuses on profit and creating shareholder value.">Profit-Driven Focus→</span>
-                </label>
-            </div>
-            <div class="slider-container">
-                <label>
-                    <span class="left-label" data-tooltip="An organization that values innovation and creativity.">←Innovation & Disruption</span>
-                     <input type="range" min="0" max="100" value="50" class="slider" name="mission_innovation_tradition">
-                    <span class="right-label" data-tooltip="An organization that values tried and true methods.">Tradition & Stability→</span>
-                </label>
-            <div class="slider-container">
-                <label>
-                    <span class="left-label" data-tooltip="Values building diverse, inclusive teams.">←Diversity & Inclusion</span>
-                     <input type="range" min="0" max="100" value="50" class="slider" name="mission_diversity_performance">
-                    <span class="right-label" data-tooltip="Values building high-performing teams without a focus on diversity.">Performance-First Culture→</span>
-                </label>
-            <div class="slider-container">
-                <label>
-                    <span class="left-label" data-tooltip="">←Cooperative & Supportive</span>
-                     <input type="range" min="0" max="100" value="50" class="slider" name="mission_cooperative_competitive">
-                    <span class="right-label" data-tooltip="">Highly Competitive→</span>
-                </label>
-            <div class="slider-container">
-                <label>
-                    <span class="left-label" data-tooltip="">←Social Responsibility</span>
-                     <input type="range" min="0" max="100" value="50" class="slider" name="mission_social_pragmatism">
-                    <span class="right-label" data-tooltip="">Business Pragmatism→</span>
-                </label>
-            </div>
-            <br>
-            </div>
-            </div>
-             
-            <h3>Work Style Preferences</h3>
-            <p>Move the slider to the position that best reflects your preferences on your own working style.</p>
-            <br>
-            <div class="slider-container">
-                <label>
-                    <span class="left-label" data-tooltip="">←Logical Decision-Making</span>
-                     <input type="range" min="0" max="100" value="50" class="slider" name="workstyle_logical_intuitive">
-                    <span class="right-label" data-tooltip="">Intuitive Decision-Making→</span>
-                </label>
-            <br>
-            <div class="slider-container">
-                <label>
-                    <span class="left-label" data-tooltip="">←Prefers Structure</span>
-                     <input type="range" min="0" max="100" value="50" class="slider" name="workstyle_structure_ambiguity">
-                    <span class="right-label" data-tooltip="">Thrives in Ambiguity→</span>
-                </label>
-            <br>
-            <div class="slider-container">
-                <label>
-                    <span class="left-label" data-tooltip="">←Deep Focus</span>
-                     <input type="range" min="0" max="100" value="50" class="slider" name="workstyle_focus_multitasking">
-                    <span class="right-label" data-tooltip="">Multitasking→</span>
-                </label>
-            <div class="slider-container">
-                <label>
-                    <span class="left-label" data-tooltip="">←Set Deadlines</span>
-                     <input type="range" min="0" max="100" value="50" class="slider" name="workstyle_deadlines_flexible">
-                    <span class="right-label" data-tooltip="">Flexible Timelines→</span>
-                </label>
-            <div class="slider-container">
-                <label>
-                    <span class="left-label" data-tooltip="">←Frequent Check-Ins</span>
-                     <input type="range" min="0" max="100" value="50" class="slider" name="workstyle_checkins_autonomy">
-                    <span class="right-label" data-tooltip="">Full Autonomy→</span>
-                </label>
-            <br>
+        <div class="slider-container">
+            <label>
+                <span class="left-label" data-tooltip="An organization that values innovation and creativity.">←Innovation & Disruption</span>
+                <input type="range" min="0" max="100" value="50" class="slider" name="mission_innovation_tradition">
+                <span class="right-label" data-tooltip="An organization that values tried and true methods.">Tradition & Stability→</span>
+            </label>
+        </div>
+        <div class="slider-container">
+            <label>
+                <span class="left-label" data-tooltip="Values building diverse, inclusive teams.">←Diversity & Inclusion</span>
+                <input type="range" min="0" max="100" value="50" class="slider" name="mission_diversity_performance">
+                <span class="right-label" data-tooltip="Values building high-performing teams without a focus on diversity.">Performance-First Culture→</span>
+            </label>
+        </div>
+        <div class="slider-container">
+            <label>
+                <span class="left-label" data-tooltip="">←Cooperative & Supportive</span>
+                <input type="range" min="0" max="100" value="50" class="slider" name="mission_cooperative_competitive">
+                <span class="right-label" data-tooltip="">Highly Competitive→</span>
+            </label>
+        </div>
+        <div class="slider-container">
+            <label>
+                <span class="left-label" data-tooltip="">←Social Responsibility</span>
+                <input type="range" min="0" max="100" value="50" class="slider" name="mission_social_pragmatism">
+                <span class="right-label" data-tooltip="">Business Pragmatism→</span>
+            </label>
+        </div>
+<br>
+<h3>Work Style Preferences</h3>
+<p>Move the slider to the position that best reflects your preferences on your own working style.</p>
+<br>
+        <div class="slider-container">
+            <label>
+                <span class="left-label" data-tooltip="">←Logical Decision-Making</span>
+                <input type="range" min="0" max="100" value="50" class="slider" name="workstyle_logical_intuitive">
+                <span class="right-label" data-tooltip="">Intuitive Decision-Making→</span>
+            </label>
+        </div>
+        <div class="slider-container">
+            <label>
+                <span class="left-label" data-tooltip="">←Prefers Structure</span>
+                <input type="range" min="0" max="100" value="50" class="slider" name="workstyle_structure_ambiguity">
+                <span class="right-label" data-tooltip="">Thrives in Ambiguity→</span>
+            </label>
+        </div>
+        <div class="slider-container">
+            <label>
+                <span class="left-label" data-tooltip="">←Deep Focus</span>
+                <input type="range" min="0" max="100" value="50" class="slider" name="workstyle_focus_multitasking">
+                <span class="right-label" data-tooltip="">Multitasking→</span>
+            </label>
+        </div>
+        <div class="slider-container">
+            <label>
+                <span class="left-label" data-tooltip="">←Set Deadlines</span>
+                <input type="range" min="0" max="100" value="50" class="slider" name="workstyle_deadlines_flexible">
+                <span class="right-label" data-tooltip="">Flexible Timelines→</span>
+            </label>
+        </div>
+        <div class="slider-container">
+            <label>
+                <span class="left-label" data-tooltip="">←Frequent Check-Ins</span>
+                <input type="range" min="0" max="100" value="50" class="slider" name="workstyle_checkins_autonomy">
+                <span class="right-label" data-tooltip="">Full Autonomy→</span>
+            </label>
+        </div>
+        <div class="slider-container">
             <label>
                 <span class="left-label" data-tooltip="">←Proven Practices</span>
-                 <input type="range" min="0" max="100" value="50" class="slider" name="workstyle_proven_experimentation">
+                <input type="range" min="0" max="100" value="50" class="slider" name="workstyle_proven_experimentation">
                 <span class="right-label" data-tooltip="">Experimentation→</span>
             </label>
-            <br>
-
-
-            <h3>Preferred Style for Supervisor</h3>
-            <p>Move the slider to the position that best reflects your preferences on your direct supervisor's management style.</p>
-            <div class="slider-container">
-                <label>
-                    <span class="left-label" data-tooltip="">←Strict Adherence to Policies</span>
-                     <input type="range" min="0" max="100" value="50" class="slider" name="supervisor_policies_adaptable">
-                    <span class="right-label" data-tooltip="">Adaptable to Situations→</span>
-                </label>
-            <div class="slider-container">
-                <label>
-                    <span class="left-label" data-tooltip="">←Structured Training & Mentorship</span>
-                     <input type="range" min="0" max="100" value="50" class="slider" name="supervisor_structured_independent">
-                    <span class="right-label" data-tooltip="">Independent Learning & Development→</span>
-                </label>
-            <div class="slider-container">
+<br>
+<h3>Preferred Style for Supervisor</h3>
+<p>Move the slider to the position that best reflects your preferences on your direct supervisor's management style.</p>
+        <div class="slider-container">
+            <label>
+                <span class="left-label" data-tooltip="">←Strict Adherence to Policies</span>
+                <input type="range" min="0" max="100" value="50" class="slider" name="supervisor_policies_adaptable">
+                <span class="right-label" data-tooltip="">Adaptable to Situations→</span>
+            </label>
+        </div>
+        <div class="slider-container">
+            <label>
+                <span class="left-label" data-tooltip="">←Structured Training & Mentorship</span>
+                <input type="range" min="0" max="100" value="50" class="slider" name="supervisor_structured_independent">
+                <span class="right-label" data-tooltip="">Independent Learning & Development→</span>
+            </label>
+        </div>
+        <div class="slider-container">
                 <label>
                     <span class="left-label" data-tooltip="">←Taskmaster & Transparent</span>
                      <input type="range" min="0" max="100" value="50" class="slider" name="supervisor_taskmaster_handsOff">
                     <span class="right-label" data-tooltip="">Hands-Off & Ambiguous→</span>
                 </label>
-            <div class="slider-container">
+        </div>
+        <div class="slider-container">
                 <label>
                     <span class="left-label" data-tooltip="">←Shows Public Recognition</span>
                      <input type="range" min="0" max="100" value="50" class="slider" name="supervisor_public_privateRecognition">
                     <span class="right-label" data-tooltip="">Shows Private Appreciation→</span>
                 </label>
-            <div class="slider-container">
+        </div>
+        <div class="slider-container">
                 <label>
                     <span class="left-label" data-tooltip="">←Encourages Competition</span>
                      <input type="range" min="0" max="100" value="50" class="slider" name="supervisor_competition_collaboration">
                     <span class="right-label" data-tooltip="">Fosters Collaboration→</span>
                 </label>
-            <div class="slider-container">
+        </div>
+        <div class="slider-container">
                 <label>
                     <span class="left-label" data-tooltip="">←Sets Boundaries</span>
                      <input type="range" min="0" max="100" value="50" class="slider" name="supervisor_boundaries_available">
                     <span class="right-label" data-tooltip="">Always Available→</span>
                 </label>
-            <br>
-
-
-            <h3>Preferred Work Environment</h3>
-            <p>Move the slider to the position that best reflects your preferences for the environment you will work in.</p>
+<br>
+<h3>Preferred Work Environment</h3>
+<p>Move the slider to the position that best reflects your preferences for the environment you will work in.</p>
             <div class="slider-container">
                 <label>
                     <span class="left-label" data-tooltip="">←Deep Focus</span>
@@ -417,11 +413,9 @@
                      <input type="range" min="0" max="100" value="50" class="slider" name="environment_separate_social">
                     <span class="right-label" data-tooltip="">Lots of Group Activities & Happy Hours→</span>
                 </label>
-            <br>
-
-
-            <h3>Preferred Collaboration Styles</h3>
-            <p>Move the slider to the position that best reflects your preferences on how you collaborate with your team.</p>
+<br>
+<h3>Preferred Collaboration Styles</h3>
+<p>Move the slider to the position that best reflects your preferences on how you collaborate with your team.</p>
             <div class="slider-container">
                 <label>
                     <span class="left-label" data-tooltip="">←Defined Roles</span>
@@ -458,11 +452,9 @@
                      <input type="range" min="0" max="100" value="50" class="slider" name="collaboration_decisive_democratic">
                     <span class="right-label" data-tooltip="">Democratic Decisions→</span>
                 </label>
-            <br>
-
-
-            <h3>Growth & Development Goals</h3>
-            <p>Move the slider to the position that best reflects your preferences on your own growth and development.</p>
+<br>
+<h3>Growth & Development Goals</h3>
+<p>Move the slider to the position that best reflects your preferences on your own growth and development.</p>
             <div class="slider-container">
                 <label>
                     <span class="left-label" data-tooltip="">←Steady Progression</span>
@@ -475,7 +467,6 @@
                      <input type="range" min="0" max="100" value="50" class="slider" name="growth_tenure_merit">
                     <span class="right-label" data-tooltip="">Merit-Based Promotion→</span>
                 </label>
-            <br>
             <div class="slider-container">
                 <label>
                     <span class="left-label" data-tooltip="">←Prioritize Skills Development</span>
@@ -500,7 +491,9 @@
                      <input type="range" min="0" max="100" value="50" class="slider" name="growth_recognition_promotion">
                     <span class="right-label" data-tooltip="">Motivated by Promotions & Advancing Titles→</span>
                 </label>
-            <br>
+<br>
+<br>
+<br>
 
         </div>
         <button type="submit" id="submitBtn">Submit</button>
