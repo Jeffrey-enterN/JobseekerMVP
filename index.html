@@ -1,72 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>enterN Jobseeker Demo</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Calibri, sans-serif;
-            margin: 20px;
-            padding: 20px;
-            background: #f4f4f4;
-            text-align: center; /* Add this to center-align the form */
-        }
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device width, initial-scale=1.0">
+        <title> enterN Jobseeker Profile Demo</title>
+        <link rel=stylesheet" href="styles.css">
+        <style>
+            body {
+                font-family: Calibri, sans-serif;
+                margin: 35px;
+                padding: 30px
+                background: #f8f8f8
+                text-align: center;
+            }
+            h2 {
+                text-align: center;
+            }
 
-        h2 {
-            text-align: center;
-        }
-
-        form {
-            display: inline-block; /* Add this to make the form an inline block */
-            width: 100%; /* Keep the form width 100% */
-            max-width: 800px; /* and max-width */
-            margin: 0 auto; /* Center the form within its container */
-        }
-
+            form {
+                display: inline-block;
+                width: 100%;
+                max-width: 750px;
+                margin: 0 auto;
+            }
         table {
             width: 100%;
-            max-width: 800px;
-            margin: 20px auto; /* Center the table, adjust margin as needed */
-            background: white;
+            max-width: 750px;
+            margin: 20px auto;
+            background: ffffff;
             border-collapse: collapse;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-
         th, td {
             padding: 12px;
             border: 1px solid #ddd;
             text-align: left;
         }
-
         th {
             background: deeppink;
             color: white;
         }
-
         input, select, textarea {
             width: 100%;
             padding: 8px;
             border: 1px solid #ccc;
             border-radius: 4px;
         }
-
         .checkbox-container {
-            display: flex;
+            display:flex;
             align-items: center;
         }
-
         .checkbox-container input {
             width: auto;
             margin-right: 10px;
         }
-
         .button-container {
             text-align: center;
             margin-top: 20px;
         }
-
         button {
             background: deeppink;
             color: white;
@@ -75,82 +66,98 @@
             cursor: pointer;
             border-radius: 4px;
         }
-
         button:hover {
             background: greenyellow;
         }
 
-        /* Responsive Design */
         @media (max-width: 600px) {
             table {
-                width: 100%;
+                width: 100%
                 font-size: 14px;
             }
         }
 
-        /* Styles for the slider part */
+        /* Styles for the Sliders */
+        .toggle-list {
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+        .toggle-header {
+            background-color: #f0f0f0;
+            padding: 10px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .toggle-header h3 {
+            margin: 0;
+        }
+        .toggle-icon {
+            font-size: 1.2em;
+            transition: transofrm 0.2s ease-in-out;
+        .toggle-content {
+            padding: 10px;
+            display: none;
+        }
+        .toggle-content.open {
+            display: block;
+        }
         .form-container {
-            margin-top: 30px;
-            padding: 20px;
+            margin-top: 15px;
+            padding: 25px;
             background: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-            text-align: center; /* Center the content within the form container */
+            box-shadow: 0 0 10px rgba (0, 0, 0, 0.1);
+            border-radius: 4px;
+            text-align: center;
         }
-
         .slider-container {
-            margin-bottom: 20px;
+            margin-bottom: 15px
         }
-
         .slider-container label {
             display: block;
             margin-bottom: 5px;
         }
-
         .slider {
-            width: 100%;
+            width: 90%;
         }
-
         .left-label, .right-label {
             display: inline-block;
-            width: 48%;
-            font-size: 0.9em;
+            width: 55%;
+            font-size: 0.8em;
             color: #555;
             position: relative;
         }
-
         .left-label::after, .right-label::before {
             content: '';
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
         }
-
-        .right-label {
+        right-label {
             text-align: center;
         }
-
         .progress-container {
-            margin: 20px auto;
-            width: 100%;
-            max-width: 800px;
+            margin: 15px auto;
+            width: 90%;
+            max-width: 550px;
         }
     </style>
 
-    <div class="progress-container">
-        <div class="progress-bar" id="progressBar"></div>
-        <span id="progressText">0% Complete</span>
-    </div>
-
+        <div class="progress-container">
+            <div class="progress-bar" id=progressBar"></div>
+            <span id="progressText">0% Complete</span>
+        </div>  
+        
 </head>
 <body>
-
-    <h2>Your enterN Profile | Let's Give Employers Something to See</h2>
+    
+    <h2>Complete Your enterN Profile</h2>
 
     <form id="jobseekerForm" onsubmit="submitForm(event)">
         <table>
             <tr>
-                <th colspan="2">Personal & Contact Info</th>
+                <th colspan="2">Your Info</th>
             </tr>
             <tr>
                 <td>First Name:</td>
@@ -158,35 +165,16 @@
             </tr>
             <tr>
                 <td>Last Name:</td>
-                <td><input type="text" name="last_name" required></td>
+                <td><input type="text" name="last_name" required</td>
             </tr>
             <tr>
                 <td>School Email (if different from your login email):</td>
-                <td><input type="email" name="email" required></td>
-            </tr>
-             <tr>
-                <td>If matched, may we share your email with employers?</td>
-                <td class="checkbox-container">
-                    <input type="checkbox" name="email_consent"> Yes
-                </td>
+                <td><input type="email" name="email"></td>
             </tr>
             <tr>
                 <td>Mobile Number:</td>
                 <td><input type="tel" name="mobile" required></td>
             </tr>
-            <tr>
-                <td>May we send SMS Notifications:</td>
-                <td class="checkbox-container">
-                    <input type="checkbox" name="sms_consent_notifications"> Yes
-                </td>
-            </tr>
-                <tr>
-                <td>If matched, may we share your number with employers?</td>
-                <td class="checkbox-container">
-                    <input type="checkbox" name="sms_consent_share"> Yes
-                </td>
-            </tr>
-
             <tr>
                 <th colspan="2">Your Summary</th>
             </tr>
@@ -194,7 +182,6 @@
                 <td>Share a paragraph about YOU!</td>
                 <td><textarea name="about_me" rows="4" placeholder="Briefly describe yourself and avoid using any identifying information or gendered pronouns to maintain the anonymity of the enterN profiles..."></textarea></td>
             </tr>
-
             <tr>
                 <th colspan="2">School & Major</th>
             </tr>
@@ -221,7 +208,6 @@
                     <small>Hold Ctrl (Cmd on Mac) to select multiple.</small>
                 </td>
             </tr>
-
             <tr>
                 <th colspan="2">Industry & Location Preferences</th>
             </tr>
@@ -254,10 +240,6 @@
                     <small>Hold Ctrl (Cmd on Mac) to select multiple.</small>
                 </td>
             </tr>
-            <tr>
-                <td>Preferences for Work Location</td>
-                <td><input type="text" name="locations" placeholder="Enter City, State or Regions"></td>
-            </tr>
         </table>
 
         <div class="form-container">
@@ -267,7 +249,14 @@
             <p>Use the sliders to indicate where in the range you feel best reflects your choice of the two styles.</p>
             <p>There are no right or wrong responses.</p>
 
+            
+            
+    <div class="toggle-list">
+        <div class="toggle-header" onclick="toggleList(this)">
             <h3>Mission & Vision</h3>
+            <span class="toggle-icon">&#9658;</span>
+        </div>
+        <div class="toggle-content">
             <p>Move the slider to the position that best reflects your preferences on the mission, vision, and values of the organization you wish to work for.</p>
             <div class="slider-container">
                 <label>
@@ -300,9 +289,11 @@
                      <input type="range" min="0" max="100" value="50" class="slider" name="mission_social_pragmatism">
                     <span class="right-label" data-tooltip="">Business Pragmatism→</span>
                 </label>
+            </div>
             <br>
-
-
+            </div>
+            </div>
+             
             <h3>Work Style Preferences</h3>
             <p>Move the slider to the position that best reflects your preferences on your own working style.</p>
             <br>
