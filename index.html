@@ -514,5 +514,42 @@
         </div>
         <button type="submit" id="submitBtn">Submit</button>
     </form>
+                <script>
+    document.getElementById('jobseekerForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        const form = this;
+        const formData = new FormData(form);
+        const data = {};
+
+        formData.forEach((value, key) => {
+            data[key] = value;
+        });
+
+        fetch('YOUR_APPS_SCRIPT_WEB_APP_URL', { // Replace with your web app URL
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+        })
+        .then(response => response.json())
+        .then(responseData => {
+            if (responseData.result === 'success') {
+                alert('Application submitted successfully!');
+                form.reset(); // Clear the form
+            } else {
+                alert('Error submitting application: ' + responseData.error);
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('Failed to submit application.  Check console.');
+        });
+    });
+    </script>
     <br>
      This profile is for demonstrative purposes only. No inputs on this page will be stored locally or in the cloud. Thank you for taking the time to check out our demo. If you have any feedback or suggestions, or if you encountered any bugs or errors, please email jeffrey@enter-n.com and let us know!
+            </body>
+            </html>
+            
