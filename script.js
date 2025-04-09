@@ -25,16 +25,3 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 });
-  function toggleList(header) {
-    const content = header.nextElementSibling;
-    const icon = header.querySelector('.toggle-icon');
-    content.classList.toggle('open');
-    icon.classList.toggle('rotate'); // Optional: for a rotating arrow
-
-    // Update the arrow direction
-    if (content.classList.contains('open')) {
-      icon.innerHTML = '&#9660;'; // Down arrow
-    } else {
-      icon.innerHTML = '&#9658;'; // Right arrow
-    }
-  }
