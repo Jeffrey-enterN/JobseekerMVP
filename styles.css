@@ -29,6 +29,11 @@ body {
     font-size: 14px;
 }
 /* Sliders */
+
+.toggle-icon.rotate {
+    transform: rotate(90deg);
+}
+
 .slider-container {
     margin: 20px 0;
 }
