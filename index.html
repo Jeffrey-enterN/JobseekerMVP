@@ -23,137 +23,109 @@
                 max-width: 750px;
                 margin: 0 auto;
             }
-        table {
-            width: 100%;
-            max-width: 750px;
-            margin: 20px auto;
-            background: ffffff;
-            border-collapse: collapse;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        th, td {
-            padding: 12px;
-            border: 1px solid #ddd;
-            text-align: left;
-        }
-        th {
-            background: deeppink;
-            color: white;
-        }
-        input, select, textarea {
-            width: 100%;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        .checkbox-container {
-            display:flex;
-            align-items: center;
-        }
-        .checkbox-container input {
-            width: auto;
-            margin-right: 10px;
-        }
-        .button-container {
-            text-align: center;
-            margin-top: 20px;
-        }
-        button {
-            background: deeppink;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-            border-radius: 4px;
-        }
-        button:hover {
-            background: greenyellow;
-        }
+            table {
+                width: 100%;
+                max-width: 750px;
+                margin: 20px auto;
+                background: ffffff;
+                border-collapse: collapse;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            th, td {
+                padding: 12px;
+                border: 1px solid #ddd;
+                text-align: left;
+            }
+            th {
+                background: deeppink;
+                color: white;
+            }
+            input, select, textarea {
+                width: 100%;
+                padding: 8px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+            .checkbox-container {
+                display:flex;
+                align-items: center;
+            }
+            .checkbox-container input {
+                width: auto;
+                margin-right: 10px;
+            }
+            .button-container {
+                text-align: center;
+                margin-top: 20px;
+            }
+            button {
+                background: deeppink;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                cursor: pointer;
+                border-radius: 4px;
+            }
+            button:hover {
+                background: greenyellow;
+            }
 
-        @media (max-width: 600px) {
+            @media (max-width: 600px) {
             table {
                 width: 100%
                 font-size: 14px;
             }
-        }
+            }
 
         /* Styles for the Sliders */
-        .toggle-list {
-            border: 1px solid #ccc;
-            margin-bottom: 10px;
-        }
-        .toggle-header {
-            background-color: #f0f0f0;
-            padding: 10px;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .toggle-header h3 {
-            margin: 0;
-        }
-        .toggle-icon {
-            font-size: 1.2em;
-            transition: transofrm 0.2s ease-in-out;
-        .toggle-content {
-            padding: 10px;
-            display: none;
-        }
-        .toggle-content.open {
-            display: block;
-        }
-        .form-container {
-            margin-top: 15px;
-            padding: 25px;
-            background: white;
-            box-shadow: 0 0 10px rgba (0, 0, 0, 0.1);
-            border-radius: 4px;
-            text-align: center;
-        }
-        .slider-container {
-            margin-bottom: 15px
-        }
-        .slider-container label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        .slider {
-            width: 90%;
-        }
-        .left-label, .right-label {
-            display: inline-block;
-            width: 55%;
-            font-size: 0.8em;
-            color: #555;
-            position: relative;
-        }
-        .left-label::after, .right-label::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-        right-label {
-            text-align: center;
-        }
-        .progress-container {
-            margin: 15px auto;
-            width: 90%;
-            max-width: 550px;
-        }
-    </style>
-
-        <div class="progress-container">
-            <div class="progress-bar" id=progressBar"></div>
-            <span id="progressText">0% Complete</span>
-        </div>  
-        
+            .form-container {
+                margin-top: 15px;
+                padding: 25px;
+                background: white;
+                box-shadow: 0 0 10px rgba (0, 0, 0, 0.1);
+                border-radius: 4px;
+                text-align: center;
+            }
+            .slider-container {
+                margin-bottom: 15px
+            }
+            .slider-container label {
+                display: block;
+                margin-bottom: 5px;
+            }
+            .slider {
+                width: 90%;
+            }
+            .left-label, .right-label {
+                display: inline-block;
+                width: 55%;
+                font-size: 0.8em;
+                color: #555;
+                position: relative;
+            }
+            .left-label::after, .right-label::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            right-label {
+                text-align: center;
+            }
+            .progress-container {
+                margin: 15px auto;
+                width: 90%;
+                max-width: 550px;
+            }
+        </style>
+    <div class="progress-container">
+        <div class="progress-bar" id=progressBar"></div>
+        <span id="progressText">0% Complete</span>
+    </div>   
 </head>
-<body>
-    
-    <h2>Complete Your enterN Profile</h2>
 
+<body>
+<h2>Complete Your enterN Profile</h2>
     <form id="jobseekerForm" onsubmit="submitForm(event)">
         <table>
             <tr>
@@ -250,6 +222,7 @@
 <p>There are no right or wrong responses.</p>               
 <h3>Mission & Vision</h3>
 <p>Move the slider to the position that best reflects your preferences on the mission, vision, and values of the organization you wish to work for.</p>
+        
         <div class="slider-container">
             <label>
                 <span class="left-label" data-tooltip="An organization with a mission-driven approach to business.">←Purpose-Driven Impact</span>
@@ -257,6 +230,7 @@
                 <span class="right-label" data-tooltip="An organization that focuses on profit and creating shareholder value.">Profit-Driven Focus→</span>
             </label>
         </div>
+        
         <div class="slider-container">
             <label>
                 <span class="left-label" data-tooltip="An organization that values innovation and creativity.">←Innovation & Disruption</span>
@@ -264,6 +238,7 @@
                 <span class="right-label" data-tooltip="An organization that values tried and true methods.">Tradition & Stability→</span>
             </label>
         </div>
+        
         <div class="slider-container">
             <label>
                 <span class="left-label" data-tooltip="Values building diverse, inclusive teams.">←Diversity & Inclusion</span>
@@ -271,6 +246,7 @@
                 <span class="right-label" data-tooltip="Values building high-performing teams without a focus on diversity.">Performance-First Culture→</span>
             </label>
         </div>
+        
         <div class="slider-container">
             <label>
                 <span class="left-label" data-tooltip="">←Cooperative & Supportive</span>
@@ -278,6 +254,7 @@
                 <span class="right-label" data-tooltip="">Highly Competitive→</span>
             </label>
         </div>
+        
         <div class="slider-container">
             <label>
                 <span class="left-label" data-tooltip="">←Social Responsibility</span>
