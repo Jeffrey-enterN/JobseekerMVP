@@ -6,28 +6,6 @@ body {
     background: #f4f4f4;
     text-align: center;
 }
-/* Sticky Progress Bar */
-.progress-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: #ddd;
-    height: 10px;
-    z-index: 1000;
-}
-.progress-bar {
-    height: 10px;
-    width: 0%;
-    background: linear-gradient(to right, cyan, deeppink);
-    transition: width 0.4s ease-in-out;
-}
-#progressText {
-    display: block;
-    text-align: center;
-    margin-top: 15px;
-    font-size: 14px;
-}
 /* Sliders */
 .slider-container {
     margin: 20px 0;
