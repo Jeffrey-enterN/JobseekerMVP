@@ -13,12 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
         let value = slider.value;
         slider.style.background = `linear-gradient(to right, aqua ${value}%, deeppink ${0 - value}%)`;
     }
-    function updateProgress() {
-        let completed = [...sliders].filter(slider => slider.value !== "50").length;
-        let progressPercent = (completed / sliders.length) * 100;
-        progressBar.style.width = progressPercent + "%";
-        progressText.innerText = Math.round(progressPercent) + "% Complete";
-    }
     function triggerHapticFeedback() {
         if (navigator.vibrate) {
             navigator.vibrate(10); // Small vibration on mobile
